@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.get("/",(req,res)=>{
     try {
-        res.status(200).send("Welcome to InstaMasai Backend")
+        res.status(200).send("Welcome to InstaMasai Backend App")
     } catch (error) {
         res.status(400).send({"error":error})
     }
