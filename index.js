@@ -20,14 +20,14 @@ app.use("/posts", postRouter)
 
 app.use("/users", userRouter)
 
-app.listen(process.env.PORT,async()=>{
-    try{
-        console.log("Connecting to DB")
-        await connection
-        console.log(`Server Running at PORT ${process.env.PORT}`)
-        console.log("Connected to DB")
-    }catch(err){
-        console.log(err)
-        console.log("Something Went Wrong...Please Try Again!!!")
-    }
-})
+// app.listen(process.env.PORT,async()=>{
+//     try{
+//         console.log("Connecting to DB")
+//         await connection
+//         console.log(`Server Running at PORT ${process.env.PORT}`)
+//         console.log("Connected to DB")
+//     }catch(err){
+//         console.log(err)
+//         console.log("Something Went Wrong...Please Try Again!!!")
+//     }
+// })
