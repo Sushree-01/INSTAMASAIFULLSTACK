@@ -20,7 +20,7 @@ app.use("/posts", postRouter)
 
 app.use("/users", userRouter)
 
-app.listen(process.env.port,async()=>{
+app.listen(process.env.PORT,async()=>{
     try{
         console.log("Connecting to DB")
         await connection
