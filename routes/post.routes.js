@@ -8,6 +8,7 @@ postRouter.use(auth)
 postRouter.get("/",async(res,req)=>{
     try{
         const posts = await PostModel.find({uid:req.body._id})
+        
         res.send(posts)
     }catch(err){
         res.json({error:err.message})
@@ -20,7 +21,8 @@ postRouter.post("/add",async(res,req)=>{
         await post.save()
         res.status(200).json({msg:"New Post added", post:req.body })
     }catch(err){
-        res.json({error:err.message})
+        res.json({error:err.message});
+        console.log(err);
     }
 })
 
