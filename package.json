@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/Sushree-01/INSTAMASAIFULLSTACK/issues"
   },
+  "engines": {
+    "node": ">=16 <20"
+    },
   "homepage": "https://github.com/Sushree-01/INSTAMASAIFULLSTACK#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -28,3 +31,5 @@
     "nodemon": "^3.0.1"
   }
 }
+
+
